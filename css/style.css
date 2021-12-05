@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Titulo;
+    src: url('/assets/fontes/ANODETONOONE.TTF');
+}
+
+h1 {
+    font-family: Titulo;
+    font-size: 2rem;
+    color: rgb(49, 45, 45);
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+p {
+    font-family: Titulo;
+    font-size: 0.850rem;
+    color: rgb(49, 45, 45);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+body {
+	background-image:url('/assets/imgs/fundo.jpg');
+}
+
+#container{
+	width: 59.375rem;
+	height:auto;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+#game-backgroud {
+    margin-top: 2.5rem;
+	width:59.375rem;
+	height: 39.375rem;
+	background-image:url('/assets/imgs/fundo_game.jpg');
+	border-color:#FFF;
+	border-style:solid;
+}
+
+#jogador {
+	width: 16rem;
+	height: 4.125rem;
+	position:absolute;
+	left: 0.5rem;
+	top:11.1875rem;
+background-image:url('/assets/imgs/apache.png');
+
+}
+
+#inimigo1 {
+	width: 16rem;
+	height: 4.125rem;
+	position: absolute;
+	left: 43.0625rem;
+	top: 15.8125rem;    
+	background-image:url('/assets/imgs/inimigo1.png');
+	
+}
+
+#inimigo2 {
+	width: 10.3125rem;
+	height: 4.375rem;
+	position: absolute;
+	left: 48.4375rem;
+	top: 27.9375rem;
+	background-image: url('/assets/imgs/inimigo2.png');
+}
+
+#amigo {
+	width: 2.75rem;
+	height: 3.1875rem;
+	position: absolute;
+	left: 0.625rem;
+	top: 29rem;
+	background-image:url('/assets/imgs/amigo.png');
+}
+
+#start {
+	width: 21.875rem;
+	height: 12.5rem;
+	background-color:#FFF;
+ 	margin-left:auto;
+        margin-right:auto;
+ 	margin-top: 6.25rem;
+	text-align:center;
+	padding: 0.625rem;
+
+}
+
