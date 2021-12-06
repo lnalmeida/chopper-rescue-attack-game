@@ -38,8 +38,8 @@ body {
 }
 
 
-#game-backgroud {
-    margin-top: 2.5rem;
+#game-background {
+    margin-top: 2.3rem;
 	width:59.375rem;
 	height: 39.375rem;
 	background-image:url('/assets/imgs/fundo_game.jpg');
@@ -47,7 +47,7 @@ body {
 	border-style:solid;
 }
 
-#jogador {
+#player {
 	width: 16rem;
 	height: 4.125rem;
 	position:absolute;
@@ -57,7 +57,7 @@ background-image:url('/assets/imgs/apache.png');
 
 }
 
-#inimigo1 {
+#enemy1 {
 	width: 16rem;
 	height: 4.125rem;
 	position: absolute;
@@ -67,7 +67,7 @@ background-image:url('/assets/imgs/apache.png');
 	
 }
 
-#inimigo2 {
+#enemy2 {
 	width: 10.3125rem;
 	height: 4.375rem;
 	position: absolute;
@@ -76,7 +76,7 @@ background-image:url('/assets/imgs/apache.png');
 	background-image: url('/assets/imgs/inimigo2.png');
 }
 
-#amigo {
+#friend {
 	width: 2.75rem;
 	height: 3.1875rem;
 	position: absolute;
@@ -90,10 +90,123 @@ background-image:url('/assets/imgs/apache.png');
 	height: 12.5rem;
 	background-color:#FFF;
  	margin-left:auto;
-        margin-right:auto;
+    margin-right:auto;
  	margin-top: 6.25rem;
 	text-align:center;
 	padding: 0.625rem;
 
 }
 
+#bullet {
+    width: 3.125rem;
+    height: 0.5rem;
+    position: absolute;
+    background-image:url('/assets/imgs/disparo.png');
+}
+
+.anima-player {
+    background-image: url('/assets/imgs/apache.png');
+    animation: play .5s steps(2) infinite;
+
+    -webkit-animation: play .5s steps(2) infinite;
+    -moz-animation: play .5s steps(2) infinite;
+    -o-animation: play .5s steps(2) infinite;
+    -ms-animation: play .5s steps(2) infinite;
+
+}
+
+@keyframes play {
+    from { background-position: 0; }
+    to { background-position: -32rem; }
+}
+
+@-webkit-keyframes play {
+    from { background-position: 0; }
+    to { background-position: -32rem; }
+}
+
+@-moz-keyframes play {
+    from { background-position: 0; }
+    to { background-position: -32rem; }
+}
+
+@-o-keyframes play {
+    from { background-position: 0; }
+    to { background-position: -32rem; }
+}
+
+@-ms-keyframes play {
+    from { background-position: 0; }
+    to { background-position: -32rem; }
+}
+
+.anima-enemy1 {
+    background-image: url('/assets/imgs/inimigo1.png');
+    animation: play .5s steps(2) infinite;
+
+    -webkit-animation: play .5s steps(2) infinite;
+    -moz-animation: play .5s steps(2) infinite;
+    -o-animation: play .5s steps(2) infinite;
+    -ms-animation: play .5s steps(2) infinite;
+
+}
+
+@keyframes play {
+    from { background-position: 0; }
+    to { background-position: -32rem; }
+}
+
+@-webkit-keyframes play {
+    from { background-position: 0; }
+    to { background-position: -32rem; }
+}
+
+@-moz-keyframes play {
+    from { background-position: 0; }
+    to { background-position: -32rem; }
+}
+
+@-o-keyframes play {
+    from { background-position: 0; }
+    to { background-position: -32rem; }
+}
+
+@-ms-keyframes play {
+    from { background-position: 0; }
+    to { background-position: -32rem; }
+}
+
+.anima-friend {
+    background-image: url('/assets/imgs/amigo.png');
+    animation: friend-move .9s steps(12) infinite;
+
+    -webkit-animation: friend-move .9s steps(12) infinite;
+    -moz-animation: friend-move .9s steps(12) infinite;
+    -o-animation: friend-move .9s steps(12) infinite;
+    -ms-animation: friend-move .9s steps(12) infinite;
+}
+
+@keyframes friend-move {
+    from { background-position: 0; }
+    to { background-position: -33rem; }
+}
+
+@-webkit-keyframes friend-move {
+    from { background-position: 0; }
+    to { background-position: -33rem; }
+}
+
+@-moz-keyframes friend-move {
+    from { background-position: 0; }
+    to { background-position: -33rem; }
+}
+
+@-o-keyframes friend-move {
+    from { background-position: 0; }
+    to { background-position: -33rem; }
+}
+
+@-ms-keyframes friend-move {
+    from { background-position: 0; }
+    to { background-position: -33rem; }
+}
