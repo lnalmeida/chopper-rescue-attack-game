@@ -37,10 +37,18 @@ body {
 	margin-right:auto;
 }
 
+#container #score {
+    padding: 0.2rem 3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    font-family: Titulo;
+    font-size: 1.5rem;
+    text-align: right;
+}
+
 
 #game-background {
-    margin-top: 2.3rem;
-	width:59.375rem;
+    width:59.375rem;
 	height: 39.375rem;
 	background-image:url('/assets/imgs/fundo_game.jpg');
 	border-color:#FFF;
@@ -103,6 +111,26 @@ background-image:url('/assets/imgs/apache.png');
     position: absolute;
     background-image:url('/assets/imgs/disparo.png');
 }
+
+#explosion1 {
+	width:15px;
+	height:87px;
+	position:absolute;
+}
+
+#explosion2 {
+	width:15px;
+	height:87px;
+	position:absolute;
+}
+
+#explosion3 {
+	width:44px;
+	height:51px;
+	position:absolute;
+}
+
+
 
 .anima-player {
     background-image: url('/assets/imgs/apache.png');
@@ -209,4 +237,40 @@ background-image:url('/assets/imgs/apache.png');
 @-ms-keyframes friend-move {
     from { background-position: 0; }
     to { background-position: -33rem; }
+}
+
+.killFriend {
+	width:44px;
+	height:51px;
+	background-image:url(../assets/imgs/amigo_morte.png);
+	animation: friendKill .5s steps(7) infinite;
+	-webkit-animation: friendKill .5s steps(7) infinite;
+    -moz-animation: friendKill .5s steps(7) infinite;
+    -ms-animation: friendKill .5s steps(7) infinite;
+    -o-animation: friendKill .5s steps(7) infinite;
+}
+
+@keyframes friendKill {
+	from {background-position:0px;}
+	to {background-position:-308px;}
+}
+
+@-webkit-keyframes friendKill {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-moz-keyframes friendKill {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-ms-keyframes friendKill {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-o-keyframes friendKill {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
 }
